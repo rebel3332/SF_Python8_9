@@ -4,26 +4,6 @@
 
 import numpy as np
 
-
-def random_predict(number: int = 1) -> int:
-    """Рандомно угадываем число
-
-    Args:
-        number (int, optional): Загаданное число. Defaults to 1.
-
-    Returns:
-        int: Число попыток
-    """
-    count = 0
-
-    while True:
-        count += 1
-        predict_number = np.random.randint(1, 101)  # предполагаемое число
-        if number == predict_number:
-            break  # выход из цикла если угадали
-    return count
-
-
 def half_devision_predict(number: int = 50) -> int: 
     """ Функция укадывает число метобом половинного деления
 
@@ -74,5 +54,4 @@ def score_game(predict) -> int:
 
 if __name__ == "__main__":
     # RUN
-    score_game(random_predict)
     score_game(half_devision_predict)
