@@ -4,6 +4,7 @@
 
 import numpy as np
 
+
 def half_devision_predict(number: int = 50) -> int: 
     """ Функция укадывает число метобом половинного деления
 
@@ -31,11 +32,12 @@ def half_devision_predict(number: int = 50) -> int:
             break
     return count
 
+
 def score_game(predict) -> int:
     """За какое количство попыток в среднем за 1000 подходов угадывает наш алгоритм
 
     Args:
-        random_predict ([type]): функция угадывания
+        predict ([type]): функция угадывания
 
     Returns:
         int: среднее количество попыток
